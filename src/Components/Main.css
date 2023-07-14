@@ -1,0 +1,152 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainDiv{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5072A7;
+}
+
+.component{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f4f4f4;
+    height: auto;
+    width: 25%;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);;
+}
+
+h1{
+    color: white;
+    background: transparent;
+    background-color: #8566aa;
+    padding: 6px 0px 2px 0px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+input{
+    height: 30px;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #8566aa;
+    outline: none;
+}
+
+.addBtn{
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #8566aa;
+    color: #fff;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+
+.addBtn:hover{
+    background-color: greenyellow;
+    }
+
+ol{
+    margin-top: 30px;
+}
+
+ol li{
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    align-items: center;
+    color: #8566aa;
+    text-transform: capitalize;
+}
+
+.crossbtn{
+    padding-bottom: 10px;
+}
+
+.toDoList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+.toDoList .deleteBtn{
+    width: auto;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 5px;
+    margin: 0 15px 0 35px;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.toDoList .deleteBtn:hover{
+    background-color: crimson;
+}
+
+@media (max-width: 850px){
+    .component{
+        width: 55%;
+        height: auto;
+    }
+
+    .toDoList .fa-times{
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addBtn{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .component{
+        width: 70%;
+        height: auto;
+    }
+
+    .toDoList .fa-times{
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addBtn{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+        font-size: 30px;
+    }
+}
